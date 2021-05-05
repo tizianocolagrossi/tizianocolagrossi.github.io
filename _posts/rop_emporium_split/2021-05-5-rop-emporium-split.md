@@ -406,7 +406,6 @@ Here i looked for a gadget with radare because ropgadget wasn't find gadget usef
 This gadget could be found also by reading the symbols of the file it is placed into **loc.usefulGadget**.
 This gadget take from the stack the value for the registers a0 and t9 and then jump into the value of t9.
 
-Now we just need to create our payload.
 
 ```asm
 0x00400a20           0800a48f  lw a0, 8(sp)
@@ -414,6 +413,8 @@ Now we just need to create our payload.
 0x00400a28           09f82003  jalr t9
 0x00400a2c           00000000  nop
 ```
+
+Now we just need to create our payload.
 
 This is the script that i created for this challenge:
 
