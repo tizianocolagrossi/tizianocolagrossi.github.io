@@ -33,8 +33,6 @@ sudo apt install gdb gdb-multiarch
 
 I also suggest to use gef gdb that provide additional features to GDB.
 
-## armv5
-
 
 
 # x86_64 (64 bit) architecture
