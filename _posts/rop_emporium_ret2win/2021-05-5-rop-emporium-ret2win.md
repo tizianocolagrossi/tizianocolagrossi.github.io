@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title:  "[ROP EMPORIUM] ret2ein"
+title:  "[ROP EMPORIUM] ret2win"
 date: "2021-05-5" 
 tags: [pwn, ret2win, ROP-EMPORIUM] 
 ---
