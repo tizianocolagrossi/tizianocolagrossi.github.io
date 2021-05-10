@@ -74,7 +74,7 @@ This is the output of rabin for the relocation
 ```
 
 So now we have the addresses where we want to jump in order to call the three function without using the call instruction (that will mess our stack)
-we can also use into our script a facility of pwntools that contains alredy thhose addresses:
+we can also use into our script some pwntools sugar that could allow us not to have to search more the addresses inside plt:
 ```python
 elf = ELF('callme')
 
