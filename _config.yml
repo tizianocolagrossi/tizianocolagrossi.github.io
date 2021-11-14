@@ -1,8 +1,8 @@
-site: Eurus
-title: Eurus
+site: Gesko
+title: Gesko
 greetings: Hi 👋
 description: >-
-  Hi I'm Tiziano Colagrossi aka Eurus I'm student of cybersecurity 💻 at Sapienza University of Rome. This is my web site where I write some writeup for the CTF 🚩 that i play with my team <a href="https://hackappatoi.github.io/">Hackappatoi</a> and other stuff that i think interesting 🥃🥃.
+  just a minimalist, personal blog
 lang: en-US
 timezone:  Europe/Rome
 repo: https://github.com/tizianocolagrossi/tizianocolagrossi.github.io # site repo [optional]
@@ -10,8 +10,8 @@ data-theme: dark # default theme "dark" | "light"
 discus-identifier: powex # replace with your disqus shortname
 
 author:
-  name: eurus
-  bio: Hi I'm Tiziano Colagrossi aka Eurus I'm student of cybersecurity 💻 at Sapienza University of Rome. This is my web site where I write some writeup for the CTF 🚩 that i play with my team <a href="https://hackappatoi.github.io/">Hackappatoi</a> and other stuff that i think interesting 🥃🥃.
+  name: gesko
+  bio: just a minimalist, personal blog
   userpicture: 
   username: # general username
   github: # github username
