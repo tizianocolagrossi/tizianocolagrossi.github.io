@@ -1,0 +1,363 @@
+body[data-theme="dark"] {
+  color: $dark-text-base-color;
+  background-color: $dark-bg-color;
+
+  // Heading
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $dark-white;
+  }
+
+  // Table
+  table {
+    thead {
+      color: $dark-white;
+      border-color: $dark-light;
+    }
+
+    th,
+    td,
+    tr {
+      border-color: $dark-light;
+    }
+  }
+
+  // Post
+  .page-content {
+    a {
+      color: $dark-accent-color;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $dark-accent-color-d;
+      }
+    }
+
+    h3 {
+      border-color: $dark-light;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      .anchor-head {
+        color: $dark-accent-color;
+      }
+    }
+  }
+
+  // Syntax
+  code {
+    &.highlighter-rouge {
+      background-color: $dark-light;
+    }
+  }
+
+  // kbd tag
+  kbd {
+    border-color: $dark-light;
+    color: $dark-white;
+    text-shadow: 0 1px 0 $dark-black;
+  }
+
+  // horizontal rule
+  hr {
+    border-color: $dark-light;
+  }
+
+  // Post Meta
+  .post-meta {
+    color: $dark-gray;
+
+    time {
+      &::after {
+        background-color: $dark-light;
+      }
+    }
+
+    span[itemprop="author"] {
+      border-color: $dark-light;
+    }
+  }
+
+  .author-avatar {
+    background-color: $black;
+    -moz-box-shadow: -9px -10px 0px $dark-accent-color !important;
+    -webkit-box-shadow: -9px -10px 0px $dark-accent-color !important;
+    box-shadow: -9px -10px 0px $dark-accent-color !important;
+  }
+
+  // Link
+  a {
+    color: inherit;
+    text-decoration-color: $dark-smoke;
+
+    &:hover {
+      color: $dark-accent-color;
+    }
+
+    &:focus {
+      outline-color: $dark-accent-color-d;
+    }
+  }
+
+  // List
+  li {
+    &:before {
+      color: $dark-white;
+    }
+  }
+
+  // Blockquote
+  blockquote {
+    color: $dark-gray;
+    border-color: $dark-light;
+  }
+
+  // Strong, Bold
+  strong,
+  b {
+    color: $dark-white;
+  }
+
+  // Navbar
+  .navbar {
+    border-color: $dark-light;
+    .menu {
+      a#mode {
+        .mode-sunny {
+          display: block;
+        }
+        .mode-moon {
+          display: none;
+        }
+      }
+
+      .menu-link {
+        color: $dark-white;
+      }
+      @include media-query($on-mobile) {
+        background-color: $dark-bg-color;
+        border-color: $dark-light;
+
+        .menu-icon {
+          > svg {
+            fill: $dark-white;
+          }
+        }
+
+        input[type="checkbox"]:checked ~ .trigger {
+          background: $dark-black;
+        }
+      }
+    }
+  }
+
+  // Post Item
+  .post-item {
+    &:not(:first-child) {
+      border-color: $dark-light;
+    }
+
+    .post-item-date {
+      color: $dark-white;
+    }
+    .post-item-title {
+      a {
+        color: $dark-text-base-color;
+
+        &:hover,
+        &focus {
+          color: $dark-white;
+        }
+      }
+    }
+  }
+
+  // Post Navigation
+  .post-nav {
+    border-color: $dark-light;
+
+    .post-nav-item {
+      font-weight: $bold-weight;
+
+      .post-title {
+        color: $dark-white;
+        opacity: 0.9;
+      }
+
+      &:hover,
+      &:focus {
+        .post-title {
+          color: $dark-accent-color-d;
+        }
+      }
+
+      .nav-arrow {
+        color: $dark-gray;
+      }
+    }
+
+    @include media-query($on-mobile) {
+      .post-nav-item:nth-child(even) {
+        border-color: $dark-light;
+      }
+    }
+  }
+
+  // Footer
+  .footer {
+    span.footer_item {
+      color: $dark-white;
+    }
+    a.footer_item:not(:last-child) {
+      color: $dark-white;
+    }
+    .footer_copyright {
+      color: $dark-gray;
+      opacity: 1;
+    }
+  }
+
+  // 404 Page
+  .not-found {
+    .title {
+      color: $dark-white;
+      text-shadow: 1px 0px 0px $dark-accent-color;
+    }
+    .phrase {
+      color: $dark-text-base-color;
+    }
+    .solution {
+      color: $dark-accent-color;
+    }
+    .solution:hover {
+      color: $dark-accent-color-d;
+    }
+  }  
+
+  
+  .post-list a:after {
+    border-bottom: 2px solid $dark-accent-color;
+  }
+  
+  .post-list a:hover:after {
+    width: 100%;
+  }
+  
+  .post-list a:before,
+  .post-list a:before {
+    content: $before-post-char;
+    color: $dark-before-post-color;
+  }
+
+  .search-article {
+    input[type="search"] {
+      color: $dark-text-base-color;
+      &::-webkit-input-placeholder {
+        color: rgba(128,128,128,0.8);
+      }
+    }
+  }
+
+  /* --- Knowledges --- */
+  .knowledges {
+    li {
+      background-color: $dark-bg-color;
+      border: $dark-text-base-color 1px solid;
+      color: $dark-text-base-color;
+    }
+  }
+
+
+  /* --- End of Knowledges --- */
+
+  .block-title h3 span {
+    color: $dark-accent-color;
+  }
+
+  .block-title:after {
+    background-image: -webkit-repeating-radial-gradient(center center, $dark-text-base-color, $dark-text-base-color 1px, transparent 0px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, $dark-text-base-color, $dark-text-base-color 1px, transparent 0px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, $dark-text-base-color, $dark-text-base-color 1px, transparent 0px, transparent 100%);
+  }
+
+
+  /* --- Skills --- */
+  /* Skills Second Style */
+
+  .skills-second-style .skill-container {
+    background-color: $dark-bg-color;
+    border: 1px solid $dark-accent-color;
+  }
+
+  .skills-second-style .skill-container:before {
+    background-color: $dark-bg-color;
+  }
+
+  .skills-second-style .skill-value {
+    color: $dark-text-base-color;
+  }
+
+  .skills-second-style .skill-percentage {
+    background-color: $dark-text-base-color;
+    border: 3px solid $dark-bg-color;
+  }
+
+
+
+
+
+  /* --- Simple Info List --- */
+
+  .info-list .title {
+    color: $dark-accent-color;
+  }
+  /* --- End Simple Info List --- */
+
+
+  .info-block-w-icon i {
+    color: $dark-bg-color;
+  }
+  /* --- End Info block with Icon --- */
+
+  /* --- Info Block with Borders --- */
+  .lm-info-block {
+    background-color: $dark-white;
+    border: 1px solid $dark-white;
+  }
+
+  .lm-info-block i {
+    color: $dark-bg-color;
+  }
+
+
+  .lm-info-block .lm-info-block-value {
+    color: $dark-bg-color;
+  }
+
+  /* --- End of Info Block with Borders --- */
+
+  /* --- Social Links --- */
+
+  .social-links ul li a {
+    color: $dark-accent-color;
+  }
+
+  .social-links ul li a:hover {
+    background-color: $dark-gray;
+  }
+  /* --- End Social Links --- */
+  
+
+}
+
+
+

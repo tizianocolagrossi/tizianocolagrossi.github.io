@@ -1,89 +1,117 @@
 ---
+title: Hi!
+permalink: /about/
 layout: default
+excerpt: Hi I'm Tiziano Colagrossi aka Eurus I'm student of cybersecurity 💻 at Sapienza University of Rome. This is my web site where I write some writeup for the CTF 🚩 that i play with my team Hackappatoi and other stuff that i think interesting 🥃🥃.
+comments: false
+
+residence: Rome
+
+# social link 
+# se non  ce l'hai commentalo
+# da qua se non voi che appare roba poi 
+# commenta tutto
+#email: 
+linkedin: https://www.linkedin.com/in/tiziano-colagrossi-656331157/
+instagram: https://www.instagram.com/little_spritz/ 
+github: https://github.com/tizianocolagrossi
+#twitter: tw
+
+# le tag con le conoscenze
+# quelle senza barra dio bo
+# famose a capi
+knowledges:
+    [ Reverse Engineering
+    , Pwn
+    , Web
+    , Forensic
+    , Cypto
+    ]
+# queste so le skill co la barra
+# percentage va da 5 a 100 con scala 5
+skills: [
+          { name: C/C++
+          , percentage: 90
+          },
+          { name: Asm
+          , percentage: 65
+          },
+          { name: Python
+          , percentage: 90
+          },
+          { name: Web technologies
+          , percentage: 70
+          },
+          { name: Rust
+          , percentage: 50
+          },
+          { name: Flutter
+          , percentage: 80
+          },
+        ]
+
+# se c'hai i certificati e sei gia 
+# pronto a lavora mettili qua
+# io non c'ho un cazzo e infatti é 
+# tutto commentato
+#certificates: [
+#                { image: image
+#                , title: title
+#                , id: id
+#                , date: date
+#                },
+#              ]
+
+
+# quello che te sei studiato negli anni
+educations_timeline: [  { year: "-"
+                        , company: "La Sapienza, University Of Rome"
+                        , title: Cybersecurity
+                        , description: 
+                        },
+                        { year: 2019
+                        , company: "La Sapienza, University Of Rome"
+                        , title: "Ingegneria informatica e automatica"
+                        , description: 
+                        },
+                        { year: 2018
+                        , company: "Google Workshop"
+                        , title: "Winner team of Google Workshop"
+                        , description: "Organized by Google and Tel Aviv University"
+                        },
+                        { year: 2016
+                        , company: Liceo Scientifico Lazzaro Spallanzani
+                        , title: Scienze applicate
+                        , description: 
+                        },
+                     ]
+
+# do te sei fatto sfrutta negli anni
+#experiences_timeline: [
+#                        { year: 2016
+#                        , company: liceo
+#                        , title: Scientifico Scienze applicate
+#                        , description: descrizione
+#                        },
+#                      ]
+
 ---
 
-<section class="post">
-  <div class="flex-row-between">
-      <a href="{{ site.url }}{{ site.baseurl }}/">« Home</a>
-    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
-      <div></div>
-    </button>
-  </div>
-</section>
-
-<section>
-    <!-- The Timeline -->
-
-    <ul class="timeline">
-
-        <!-- Item 1 -->
-        <li>
-            <div class="direction-r">
-                <div class="flag-wrapper">
-                    <span class="flag">Freelance</span>
-                    <span class="time-wrapper"><span class="time">2010 - 2016</span></span>
-                </div>
-                <div class="desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Convallis convallis tellus id interdum. A lacus 
-                    vestibulum sed arcu non odio euismod lacinia. Orci a scelerisque purus semper eget duis. 
-                    Læs mere: <a href="https://tristanwhite.info" target="_top">https://tristanwhite.info</a>
-                </div>
-            </div>
-        </li>
-
-        <!-- Item 2 -->
-        <li>
-            <div class="direction-l">
-                <div class="flag-wrapper">
-                    <span class="flag">Rundhøjskolen</span>
-                    <span class="time-wrapper"><span class="time">2013 - 2016</span></span>
-                </div>
-                <div class="desc">
-                    Som <strong>IT-vejleder</strong> in metus vulputate eu scelerisque felis imperdiet. 
-                    Eget nunc scelerisque viverra mauris in. Quis imperdiet massa tincidunt nunc pulvinar sapien et. 
-                    Diam ut venenatis tellus in metus. Nisi porta lorem mollis aliquam ut porttitor leo a. Proin 
-                    sagittis nisl rhoncus mattis. Velit dignissim sodales ut eu sem integer vitae justo. Interdum 
-                    velit laoreet id donec ultrices tincidunt. Donec ultrices tincidunt arcu non sodales. 
-                    Lectus urna duis convallis convallis tellus. 
-                </div>
-            </div>
-        </li>
-
-        <!-- Item 3 -->
-        <li>
-            <div class="direction-r">
-                <div class="flag-wrapper">
-                    <span class="flag">Serverhosting A/S</span>
-                    <span class="time-wrapper"><span class="time">2012</span></span>
-                </div>
-                <div class="desc">
-                    Cras semper auctor neque vitae tempus quam pellentesque. Tempor orci dapibus ultrices
-                    in iaculis nunc sed augue. Urna porttitor rhoncus dolor purus non. 
-                </div>
-            </div>
-        </li>
-
-
-        <!-- Item 4 -->
-        <li>
-            <div class="direction-l">
-                <div class="flag-wrapper">
-                    <span class="flag">IT-teknolog</span>
-                    <span class="time-wrapper"><span class="time">2010 - 2012</span></span>
-                </div>
-                <div class="desc">
-                    Works well on mobile too! Try to scale down the window if you're on a pc
-                </div>
-            </div>
-        </li>
-
-    </ul>
-
-</section>
+<div class="row">
+    <div class="col-12 col-md-6">
+        {% include info_list.html %}
+        <!-- Knowledges -->
+        {% include knowledge.html %}
+        <!-- End of Knowledges -->
+    </div>
+    <div class="col-12 col-md-6">
+        <!-- Coding Skills -->
+        {% include coding_skills.html %}
+        <!-- End of Coding Skills -->
+    </div>
+    
+</div>
 
 
 
-<section>
-  <nav class="post-nav" /nav>
-</section>
+
