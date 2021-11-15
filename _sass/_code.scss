@@ -66,19 +66,6 @@ figure, .figure {
   box-shadow: 0 1px 2px var(--shadow-color);
   position: relative;
   
-  &:before {
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 0.5em;
-        background-color: var(--code-border);
-        content: "\e86f";
-        font-family: "icomoon" !important;
-        line-height: 1;
-        text-transform: none;
-        speak: none;
-        box-shadow: 0 1px 2px var(--shadow-color);
-      }
 
   pre {
     line-height: 1.6;
