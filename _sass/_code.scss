@@ -60,7 +60,7 @@ figure, .figure {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   // /* Make code same width as regular text, and scroll the full page width on mobile */
- // @include figure2();
+  @include figure2();
   margin-left: 1rem;
   margin-right: 1rem;
   backface-visibility: hidden;
