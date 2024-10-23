@@ -1,0 +1,14 @@
+{
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/tizianocolagrossi",
+      "image": "images/social/github.svg"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://it.linkedin.com/in/tiziano-colagrossi-656331157",
+      "image": "images/social/linkedin.svg"
+    }
+  ]
+}

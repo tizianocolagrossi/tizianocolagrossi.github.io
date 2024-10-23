@@ -1,8 +1,67 @@
-[build]
-  publish = "exampleSite/public"
-  command = "cd exampleSite && hugo --themesDir ../.."
+baseURL = "/"
+languageCode = "en-us"
+theme = "hugo-winston-theme"
+themesDir = "themes"
+title = "Tiziano Colagrossi website"
+paginate = 3
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
 
-[build.environment]
-  HUGO_VERSION = "0.80.0"
-  HUGO_THEME = "repo"
-  HUGO_BASEURL = "/"
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"
+
+[params]
+  google_analytics_id = ""
+  showAuthorOnHomepage = true
+  showAuthorOnPosts = false
+  showIntroContentOnHomepage = true
+  showPostsOnHomepage = false
+  usePaginationOnHomepage = false
+  limitPostsOnHomepage = 3 # only used if usePaginationOnHomepage is false
+  sortPostsByDateOldestFirst = false
+  addDot = true
+  addFrame = true
+  highlightColor = '#ff8100'
+  baseColor = "#fbf9f2"
+  baseOffsetColor = "#fefffb"
+  headingColor = "#1c1c1c"
+  textColor = "#3a3226"
+  dotColor = "#ff8100"
+  enableGoogleFonts = true 
+  googleFontsUrl = "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+  fontFamilyHeading = "Poppins"
+  fontFamilyParagraph = "Helvetica"
+  fontFamilyMonospace = "monospace"
+
+# markdown config settings https://gohugo.io/getting-started/configuration-markup/#goldmark
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    identifier = "blog"
+    weight = 2
+    url = "/posts/"
+  [[menu.main]]
+    name = "About"
+    identifier = "about"
+    weight = 3
+    url = "/About/"
+  [[menu.main]]
+    name = "Tags"
+    identifier = "tags"
+    weight = 4
+    url = "/tags/"
