@@ -1,0 +1,19 @@
+
+figure,
+p {
+  margin: 0;
+}
+
+
+img,
+svg,
+video {
+  // display: block;
+  vertical-align: middle;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
