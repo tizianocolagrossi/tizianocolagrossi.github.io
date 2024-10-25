@@ -3,3 +3,4 @@ node_modules
 .idea
 resources
 public
+/resources/_gen/
